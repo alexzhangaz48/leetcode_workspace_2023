@@ -1,7 +1,7 @@
 def factorial(x):
-    if x>0:
-        return x*(x-1)
+    if x==0:
+        return 1
     else:
-        return x
+        return x*factorial(x-1)
     
-print(factorial(3))
+print(factorial(0))
